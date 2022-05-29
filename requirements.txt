@@ -10,3 +10,15 @@ pytz==2022.1
 requests==2.27.1
 six==1.16.0
 urllib3==1.26.9
+cycler==0.11.0
+fonttools==4.33.3
+kiwisolver==1.4.2
+matplotlib==3.5.2
+packaging==21.3
+pillow==9.1.1
+pyparsing==3.0.9
+typing-extensions==4.2.0
+joblib==1.1.0
+scikit-learn==1.0.2
+threadpoolctl==3.1.0
+tensorflow==2.9.1
