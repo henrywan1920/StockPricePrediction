@@ -90,7 +90,8 @@ if __name__ == '__main__':
                'WHR', 'WMB', 'WLTW', 'WYNN', 'XEL', 'XLNX', 'XYL', 'YUM', 'ZBRA', 'ZBH', 'ZION', 'ZTS']
     max_thread_workers = 50
 
-    workers = min(max_thread_workers, len(stock_names))  # in case a smaller number of stocks than threads was passed in
+    # If number of stocks is less than maxmium workers, then select the minimum number.
+    workers = min(max_thread_workers, len(stock_names))
     with futures.ThreadPoolExecutor(workers) as executor:
         res = executor.map(query_the_iex_for, stock_names)
 
